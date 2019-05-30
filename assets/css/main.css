@@ -2063,7 +2063,7 @@ input, select, textarea {
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 .rw-sentence span{
-	font-size: 150%;
+	font-size: 200%;
 	color: #444;
 	font-weight: normal;
 }
@@ -2072,7 +2072,9 @@ input, select, textarea {
 	text-indent: 10px;
 }
 .rw-words-1 span{
-	
+	font-size: 200%;
+	position: absolute;
+	left: 40%;
 	opacity: 0;
 	overflow: hidden;
 	color: #11c5e0;
