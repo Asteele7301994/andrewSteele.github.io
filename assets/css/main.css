@@ -2982,7 +2982,6 @@ input, select, textarea {
 	.pic{
 		background-image: url("images/meImage.png");
 		background-repeat: no-repeat;
-		background-position: -50px -200px;
 		position: relative;
 		transform: none;
 	}
