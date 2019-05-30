@@ -2987,7 +2987,7 @@ input, select, textarea {
 	height: 35%; 
 	object-fit: contain;
 	position: relative;
-	left: -110px;
+	left: 0px;
 	top: -100px;
 	border-radius: 8px;
 
