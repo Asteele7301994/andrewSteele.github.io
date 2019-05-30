@@ -2072,6 +2072,9 @@ input, select, textarea {
 	text-indent: 10px;
 }
 .rw-words-1 span{
+	position: relative;
+	top:0px;
+	left:0px;
 	opacity: 0;
 	overflow: hidden;
 	color: #11c5e0;
@@ -2980,8 +2983,12 @@ input, select, textarea {
 
 	/* Image */
 .contain{
-	object-fit: cover;
+	width: 35%; 
+	height: 35%; 
+	object-fit: contain;
 	position: relative;
-	left: -100px;
-	top: -350px;
+	left: -120px;
+	top: -100px;
+	border-radius: 8px;
+
 }
