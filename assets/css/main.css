@@ -2998,3 +2998,20 @@ input, select, textarea {
 	border-radius: 8px;
 
 }
+
+/* Resume */
+
+.expand{
+	transition: width 0.3s ease-in-out;
+	-webkit-transition: width 0.3s ease-in-out;
+	width:120px;
+	height:120px;
+	background-color: #11c5e0;
+	position: relative;
+	display: inline-block;
+}
+.expand:hover{
+	width:300px;
+	height:300px;
+	background: #1075a9;
+}
