@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+html, body, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -3004,14 +3004,17 @@ input, select, textarea {
 .expand{
 	transition: width 0.3s ease-in-out;
 	-webkit-transition: width 0.3s ease-in-out;
-	width:120px;
-	height:120px;
+	width:50px;
+	height:1000px;
 	background-color: #11c5e0;
 	position: relative;
 	display: inline-block;
+	margin-left: 5px;
+	
 }
-.expand:hover{
-	width:300px;
-	height:300px;
+.expand:active{
+	width:95%;
+	height:1000px;
 	background: #1075a9;
+	position: sticky
 }
