@@ -2055,7 +2055,6 @@ input, select, textarea {
 	font-family: 'Bree Serif';
 	position: relative;
 	padding: 10px;
-	text-align: center;
 
 }
 .rw-sentence{
@@ -2207,6 +2206,7 @@ input, select, textarea {
 				}
 				.biohead {
 					color:#1EC9CB;
+					text-align: center;
 					font-size: 500%;
 				}
 				.formBorder{
@@ -3006,32 +3006,13 @@ input, select, textarea {
 	height: 200px;
 	position: relative;
 	perspective: 1000px;
-	top:50%;
-	left:0%;
+
   }
-  @media screen and (max-width: 300px) {
-
-	.container2 {
-		width: 20px;
-		height: 2px;
-	}
-
-	.item{
-		width: 20px;
-		height: 20px;	
-	}
-	.inner{
-		width: 20px;
-		height: 20px;
-	}
-	.a,.b{
-		transform: translateZ(calc(100%-250px))
-	}
-} 
+   
   .carousel {
 
 	width: 100%;
-	position: relative;
+	position: absolute;
 	transform-style: preserve-3d;
 	transition: transform 1s;
 
@@ -3039,7 +3020,7 @@ input, select, textarea {
    
   .item {
 	display: block;
-	position: relative;
+	position: absolute;
 	background: #000;
 	width: 250px;
 	height: 200px;
@@ -3047,101 +3028,10 @@ input, select, textarea {
 	font-size: 5em;
 	text-align: center;
 	color: #FFF;
+	opacity: 0.95;
 	border-radius: 10px;
   }
-
-  .inner{
-	display: block;
-	position: relative;
-	width: 150px;
-	height: 100px;
-  }
-  
-#myImg,#myImg2 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover,#myImg2:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 40px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
+   
   .a {
 	transform: rotateY(0deg) translateZ(250px);
 	background: #ed1c24;
@@ -3150,7 +3040,7 @@ input, select, textarea {
 	transform: rotateY(180deg) translateZ(250px);
 	background: #0072bc;
   }
-
+ 
    
   .next, .prev {
 	color: #444;
@@ -3162,17 +3052,99 @@ input, select, textarea {
 	border-top: 1px solid #FFF;
 	box-shadow: 0 5px 0 #999;
 	transition: box-shadow 0.1s, top 0.1s;
+	margin-right: 200%;
+	
+	
   }
   .next:hover, .prev:hover { color: #000; }
   .next:active, .prev:active {
 
 	box-shadow: 0 1px 0 #999;
   }
-  .next { 
+  .next {  
 	top:120%;
-	left:100%
+	left:90%;
+	
+}
+  .prev {  
+	top:120%;
+	left:-30%;
+
+}#myImg,#myImg2 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  #myImg:hover,#myImg2:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption { 
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
 	}
-  .prev { 
-	  top:120%;
-	  left:-40%;
-   }
+  }
