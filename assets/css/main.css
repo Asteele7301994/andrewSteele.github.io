@@ -3180,15 +3180,15 @@ input, select, textarea {
   div.skills{
 	float: left;
 	
-	padding-right: 30px;
+	padding-right: 40px;
 
-	padding-left: 30px;
+	padding-left: 40px;
 
   }
   div.skills2{
 	display:inline-block;
 
-	padding-right: 60px;
+	padding-right: 40px;
 
-	padding-left: 30px;
+	padding-left: 40px;
   }
