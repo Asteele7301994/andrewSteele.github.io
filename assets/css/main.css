@@ -1730,6 +1730,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			
 		}
 
 	ol {
@@ -3002,8 +3003,8 @@ input, select, textarea {
 /* Resume */
 .container2 {
 	margin: 0 auto;
-	width: 250px;
-	height: 200px;
+	width: 148.75px;
+	height: 210.25px;
 	position: relative;
 	perspective: 1000px;
 
@@ -3026,7 +3027,7 @@ input, select, textarea {
 		line-height: 200px;
 		font-size: 5em;
 		text-align: center;
-		color: #FFF;
+		color: rgb(240, 3, 3);
 		opacity: 0.95;
 		border-radius: 10px;
 	}
@@ -3047,13 +3048,12 @@ input, select, textarea {
 	display: block;
 	position: fixed;
 	background: #000;
-	width: 250px;
-	height: 200px;
+	width: 148.75px;
+	height: 210.25px;
 	line-height: 200px;
 	font-size: 5em;
 	text-align: center;
 	color: #FFF;
-	opacity: 0.95;
 	border-radius: 10px;
   }
    
@@ -3062,7 +3062,11 @@ input, select, textarea {
 	background: #ed1c24;
   }
   .b {
-	transform: rotateY(180deg) translateZ(250px);
+	transform: rotateY(120deg) translateZ(250px);
+	background: #0072bc;
+  }
+  .c {
+	transform: rotateY(240deg) translateZ(250px);
 	background: #0072bc;
   }
  
@@ -3088,20 +3092,20 @@ input, select, textarea {
   }
   .next {  
 	top:120%;
-	left:90%;
+	left:115%;
 	
 }
   .prev {  
 	top:120%;
-	left:-30%;
+	left:-90%;
 
-}#myImg,#myImg2 {
+}#myImg,#myImg2,#myImg3 {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 0.3s;
   }
   
-  #myImg:hover,#myImg2:hover {opacity: 0.7;}
+  
   
   /* The Modal (background) */
   .modal {
@@ -3172,4 +3176,18 @@ input, select, textarea {
 	.modal-content {
 	  width: 100%;
 	}
+  }
+  div.skills{
+	float: left;
+	padding-top: 30px;
+	padding-right: 60px;
+	padding-bottom: 60px;
+	padding-left: 30px;
+  }
+  div.skills2{
+	display:inline-block;
+	padding-top: 30px;
+	padding-right: 60px;
+	padding-bottom: 60px;
+	padding-left: 30px;
   }
