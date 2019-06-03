@@ -3179,15 +3179,16 @@ input, select, textarea {
   }
   div.skills{
 	float: left;
-	padding-top: 30px;
-	padding-right: 60px;
-	padding-bottom: 60px;
+	
+	padding-right: 30px;
+
 	padding-left: 30px;
+
   }
   div.skills2{
 	display:inline-block;
-	padding-top: 30px;
+
 	padding-right: 60px;
-	padding-bottom: 60px;
+
 	padding-left: 30px;
   }
