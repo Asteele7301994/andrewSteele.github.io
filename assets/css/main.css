@@ -3242,6 +3242,10 @@ input, select, textarea {
 
 	padding-left: 40px;
 	}
+	.carousel {
+		width: 500px;
+		height: 550px;
+}
   .carousel-inner img {
 		width: 500px;
 		height: 550px;
