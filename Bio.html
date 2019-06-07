@@ -7,7 +7,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<style>
+  @media only screen and (max-width: 400px){
+	.carousel-inner img {
+		width: 50%;
+		height: 50%;
+}
+  }
+		</style>
+		</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
@@ -30,7 +39,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li class="current"><a href="Bio.html">Bio</a></li>
 				</ul>
-			</nav>
+		</nav>
 
 	</section>
 
@@ -45,9 +54,9 @@
 							<article class="box post formBorder">
 								<header>		
 									<div>
-									<h1>Name:</h1>Andrew J. Steele 
-									<h1>DOB:</h1> 07/30/1994
-									<h1>Skills:</h1>
+									<h4><b>Name:</b></h4>Andrew J. Steele 
+									<h4><b>DOB:</b></h4> 07/30/1994
+									<h4><b>Skills:</b></h4>
 									
 									<div class="skills">
 										<ul style="list-style: none;">	
@@ -141,7 +150,7 @@
 												</div>
 										<div class="skills2">
 												<br>
-									<h1>Hobbies:</h1><ul>
+									<h4><b>Hobbies:</b></h4><ul>
 													<li>Computers</li>
 													<li>Traveling</li>
 													<li>Basketball</li>
@@ -149,36 +158,53 @@
 													<li>Bowling</li>
 													<li>Video Games</li>
 												</ul>
-									<h1>5 Year Plan(2019):</h1>
+									<h4><b>5 Year Plan(2019):</b></h4>
 									Finish my Masters Degree in Information Technology. Work somewhere that I'll be able to grow/develop my skills, opportunities, and myself personally.
                                     I'd preferably like to be in software or web development as a full stack dev, but open to all areas of computer science including a 
                                     network admin/cyber security/data analyst centric role. Not afraid to travel and take a new opportunity outside familiar territory.
 
-									<h1>Languages:</h1><ul>
+									<h4><b>Languages:</b></h4><ul>
 													<li>English: Native Speaker</li>
 													<li>Japanese: 初心者</li>
 													<li>Spanish: Necesito mejorar</li>
 												</ul>
 											</div>	
-											<h1 style="text-align: center;">Click Me</h3>
-											<br>
-											<div class="container2">
-												<div class="carousel">
-													<div><img class="item a" id="myImg" src="assets/css/images/Ref.PNG" alt="Professional Refereneces"></div>
-													<div><img class="item b" id="myImg2"src="assets/css/images/Software_Resume.PNG" alt="Software Development Resume"></div>
-													<div><img class="item c" id="myImg3" src="assets/css/images/IT_Resume.PNG" alt="I.T. Resume"></div>
+											<div id="demo" class="carousel slide" data-ride="carousel">
 
+												<!-- Indicators -->
+												<ul class="carousel-indicators">
+												  <li data-target="#demo" data-slide-to="0" class="active"></li>
+												  <li data-target="#demo" data-slide-to="1"></li>
+												  <li data-target="#demo" data-slide-to="2"></li>
+												</ul>
+												
+												<!-- The slideshow -->
+												<div class="carousel-inner">
+												  <div class="carousel-item active">
+													<img src="assets/css/images/Ref.PNG" id="myImg" alt="Los Angeles">
+  												  </div>
+												  <div class="carousel-item">
+													<img src="assets/css/images/Software_Resume.PNG" id="myImg2" alt="Chicago" >
 												</div>
-												<div class="next">Next</div>
-												<div class="prev">Prev</div>
-											</div>
-											<div id="myModal" class="modal">
-													<span class="close">&times;</span>
-													<img class="modal-content" id="img01">
-													<div id="caption"></div>
-											</div>
-											
+												  <div class="carousel-item">
+													<img src="assets/css/images/IT_Resume.PNG" id="myImg3" alt="New York" >
+
+												  </div>
+												</div>
+												
+												<!-- Left and right controls -->
+												<a class="carousel-control-prev" href="#demo" data-slide="prev">
+												  <span class="carousel-control-prev-icon"></span>
+												</a>
+												<a class="carousel-control-next" href="#demo" data-slide="next">
+												  <span class="carousel-control-next-icon"></span>
+												</a>					
 							</header>
+							<div id="myModal" class="modal">
+								<span class="closer">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"></div>
+						</div>
 	<br>
 	<br>
 	<br>															
@@ -237,7 +263,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/carousel.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 			<script src="assets/js/modal.js"></script>
 
 	</body>

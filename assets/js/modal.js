@@ -22,7 +22,7 @@ img3.onclick = function(){
     captionText.innerHTML = this.alt;
 }
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("closer")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
