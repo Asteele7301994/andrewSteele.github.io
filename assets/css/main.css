@@ -2211,7 +2211,7 @@ input, select, textarea {
 				.biohead {
 					color:#1EC9CB;
 					text-align: center;
-					font-size: 500%;
+					font-size: 450%;
 				}
 				.formBorder{
 					border-radius: 8px;
@@ -3220,14 +3220,15 @@ input, select, textarea {
   div.skills{
 	float: left;
 	border-style: double;
-	padding-right: 50px;
-	padding-left: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 
-	margin-right: 40px;
-	margin-left:40px;
-	margin-top: 10px;
+	margin-right: 20px;
+	margin-left:20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	box-shadow: 5px 10px 8px 10px #888888;
 
 	}
