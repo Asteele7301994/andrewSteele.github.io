@@ -181,6 +181,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 70em;
+		
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2992,272 +2993,29 @@ input, select, textarea {
 	}
 
 	/* Image */
-.contain{
-	width: 35%; 
-	height: 35%; 
-	object-fit: contain;
-	position: relative;
-	left: 0px;
-	top: -100px;
-	border-radius: 8px;
-
-}
-
-/* Resume */
-.container2 {
-	margin: 0 auto;
-	width: 148.75px;
-	height: 210.25px;
-	position: relative;
-	perspective: 1000px;
-
-  }
-  @media screen and (min-width: 360px){
-
-	.container2 {
-		margin: 0 auto;
-		width: 10px;
-		height: 50px;
-		position: relative;
-		perspective: 1000px;
-	}
-	.carousel {
-
-		width: 100%;
-		position: absolute;
-		transform-style: preserve-3d;
-		transition: transform 1s;
+	div.skills{
+		float: left;
+		border-style: double;
+		padding-right: 35px;
+		padding-left: 35px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	
+		margin-right: 20px;
+		margin-left:20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		box-shadow: 5px 10px 8px 10px #888888;
 	
 		}
-	.item {
-		display: block;
-		position: fixed;
-		background: #000;
-		width: 74.375px;
-		height: 105.125px;
-		line-height: 200px;
-		font-size: 5em;
-		text-align: center;
-		color: rgb(240, 3, 3);
-		opacity: 0.95;
-		border-radius: 10px;
-	}
-	.next, .prev {
-		color: #444;
-		position: absolute;
-		padding: 1em 2em;
-		cursor: pointer;
-		background: #CCC;
-		border-radius: 5px;
-		border-top: 1px solid #FFF;
-		box-shadow: 0 5px 0 #999;
-		transition: box-shadow 0.1s, top 0.1s;
-		margin-right: 200%;
-		
-		
+		p.skills{
+			border: 2px solid red;
+			border-radius: 5px;
 		}
-		.next:hover, .prev:hover { color: #000; }
-		.next:active, .prev:active {
+	  div.skills2{
+		display:inline-block;
 	
-		box-shadow: 0 1px 0 #999;
+		padding-right: 40px;
+	
+		padding-left: 40px;
 		}
-		.next {  
-		top:120%;
-		left:115%;
-		
-	}
-		.prev {  
-		top:120%;
-		left:-90%;
-	
-	}
-
-}
-
-   
-  .carousel {
-
-	width: 100%;
-	position: absolute;
-	transform-style: preserve-3d;
-	transition: transform 1s;
-
-  }
-   
-  .item {
-	display: block;
-	position: fixed;
-	background: #000;
-	width: 148.75px;
-	height: 210.25px;
-	line-height: 200px;
-	font-size: 5em;
-	text-align: center;
-	color: #FFF;
-	border-radius: 10px;
-  }
-   
-  .a {
-	transform: rotateY(0deg) translateZ(250px);
-	background: #ed1c24;
-  }
-  .b {
-	transform: rotateY(120deg) translateZ(250px);
-	background: #0072bc;
-  }
-  .c {
-	transform: rotateY(240deg) translateZ(250px);
-	background: #0072bc;
-  }
- 
-   
-  .next, .prev {
-	color: #444;
-	position: absolute;
-	padding: 1em 2em;
-	cursor: pointer;
-	background: #CCC;
-	border-radius: 5px;
-	border-top: 1px solid #FFF;
-	box-shadow: 0 5px 0 #999;
-	transition: box-shadow 0.1s, top 0.1s;
-	margin-right: 200%;
-	
-	
-  }
-  .next:hover, .prev:hover { color: #000; }
-  .next:active, .prev:active {
-
-	box-shadow: 0 1px 0 #999;
-  }
-  .next {  
-	top:120%;
-	left:115%;
-	
-}
-  .prev {  
-	top:120%;
-	left:-90%;
-
-}#myImg,#myImg2,#myImg3 {
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-  }
-  
-  
-  
-  /* The Modal (background) */
-  .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
-	text-align: center;
-	color: #ccc;
-	padding: 10px 0;
-	height: 150px;
-  }
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption { 
-	animation-name: zoom;
-	animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-	from {transform:scale(0)} 
-	to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .closer {
-	position: absolute;
-	top: 35px;
-	right: 35px;
-	color: #f1f1f1;
-	font-size: 40px;
-	font-weight: bold;
-	transition: 0.3s;
-  }
-  
-  .closer:hover,
-  .closer:focus {
-	color: #bbb;
-	text-decoration: none;
-	cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-	.modal-content {
-	  width: 100%;
-	}
-  }
-  div.skills{
-	float: left;
-	border-style: double;
-	padding-right: 35px;
-	padding-left: 35px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-
-	margin-right: 20px;
-	margin-left:20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	box-shadow: 5px 10px 8px 10px #888888;
-
-	}
-	p.skills{
-		border: 2px solid red;
-		border-radius: 5px;
-	}
-  div.skills2{
-	display:inline-block;
-
-	padding-right: 40px;
-
-	padding-left: 40px;
-	}
-	.carousel {
-		width: 500px;
-		height: 550px;
-}
-  .carousel-inner img {
-		width: 500px;
-		height: 550px;
-}
-@media only screen and (max-width: 700px){
-	.carousel {
-		width: 100%;
-		height: 100%;
-}
-  .carousel-inner img {
-		width: 100%;
-		height: 100%;
-}
-  }
