@@ -2994,7 +2994,7 @@ input, select, textarea {
 
 	/* Skills Boxes */
 	div.skills{
-		float: left;
+		float: center;
 		border-style: double;
 		padding-right: 50px;
 		padding-left: 50px;
